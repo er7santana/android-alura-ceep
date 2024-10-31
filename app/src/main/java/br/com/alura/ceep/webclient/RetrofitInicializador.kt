@@ -6,7 +6,7 @@ import retrofit2.converter.moshi.MoshiConverterFactory
 
 class RetrofitInicializador {
     private val retrofit = Retrofit.Builder()
-        .baseUrl("http://10.65.226.171:8080/")
+        .baseUrl("http://10.0.2.2:8080/")
         .addConverterFactory(MoshiConverterFactory.create())
         .build()
 

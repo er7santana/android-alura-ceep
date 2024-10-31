@@ -32,5 +32,5 @@ interface NotaDao {
     suspend fun desativa(id: String)
 
     @Query("SELECT * FROM Nota WHERE desativada = 1")
-    suspend fun buscaDesativadas(): Flow<List<Nota>>
+    fun buscaDesativadas(): Flow<List<Nota>>
 }
